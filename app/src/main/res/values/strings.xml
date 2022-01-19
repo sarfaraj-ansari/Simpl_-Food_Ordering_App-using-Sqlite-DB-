@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">FoodOrderinApp</string>
+    <string name="hamburger">Burger is a Junk food</string>
+    <string name="egg_roll">Fresh and well cooked</string>
+    <string name="egg_chowmein">chowmein with double egg</string>
+    <string name="veg_chowmein">Best vegetable chowmein</string>
+    <string name="veg_roll">Roll with no egg</string>
+    <string name="pizza">This pizza is full of cheese</string>
+    <string name="chicken_biryani">Tasty and fresh chicken Biryani</string>
+    <string name="mutton_biryani">Tasty and healthy Mutton Biryani</string>
+    <string name="chilli_chicken">Very good in taste</string>
+    <string name="fried_rice">Fried rice</string>
+    <string name="fried_rice_with_chilli">Fried rice with tasty chilli chicken</string>
+    <string name="burger_with_fries">Burger with potato fries</string>
+    <string name="cheese_burger">Burger with extra cheese</string>
+    <string name="chicken_dosa">South indian style chicken Dosa</string>
+    <string name="chicken_burger">Burger with chicken</string>
+    <string name="chicken_fries">fried 6 piece of chicken</string>
+    <string name="cold_coffee">Freash and cold coffee</string>
+    <string name="iced_coffee">Freash and cold icedcoffee</string>
+    <string name="coldcoffe_milkshake">Fresh cold coffee MilkShake</string>
+    <string name="masaladosa">South indian style masala dosa</string>
+    <string name="samosa">4 piece fresh and tasty samosas</string>
+    <string name="veg_spring_roll">Healthy and good in taste</string>
+    <string name="fries">Potato fries</string>
+    <string name="hydrabadi_veg_biryani">Tasty and healthy hydrabadi style veg biryani</string>
+
+
+</resources>

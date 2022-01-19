@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="5dp"
+    android:elevation="5dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ordersimageViewid"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            app:srcCompat="@drawable/burger_with_fries" />
+
+        <TextView
+            android:id="@+id/ordersfoodNametextViewid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@id/ordersimageViewid"
+            android:text="burger with fries"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/NotextViewid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="order no :-"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:textAllCaps="true"
+            android:layout_toRightOf="@id/ordersimageViewid"
+            android:layout_below="@id/ordersfoodNametextViewid"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/ordersOrderNotextViewid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:layout_toRightOf="@+id/NotextViewid"
+            android:layout_below="@id/ordersfoodNametextViewid"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="11dp"
+            android:textSize="15sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/PricetextViewid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Price in Rs :-"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_toRightOf="@id/ordersimageViewid"
+            android:layout_below="@id/ordersOrderNotextViewid"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="15dp"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/orderspricetextViewid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="150"
+            android:textColor="@color/red"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:inputType="number"
+            android:layout_below="@id/ordersOrderNotextViewid"
+            android:layout_toRightOf="@id/PricetextViewid"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="13dp"
+            />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="10dp"
+    android:elevation="5dp"
+
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+
+        >
+
+
+        <ImageView
+            android:id="@+id/main_imageViewid"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            app:srcCompat="@drawable/burger_with_fries"
+            android:scaleType="centerCrop"
+            />
+
+        <TextView
+            android:id="@+id/main_titletextViewid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Burger with Fries"
+            android:layout_toRightOf="@id/main_imageViewid"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            />
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="40dp"
+           android:id="@+id/linearlayoutid"
+           android:layout_below="@id/main_titletextViewid"
+           android:layout_toRightOf="@id/main_imageViewid"
+           android:orientation="horizontal"
+           android:layout_marginLeft="20dp"
+           android:layout_marginTop="11dp"
+           android:gravity="center_vertical"
+           >
+
+           <TextView
+               android:id="@+id/textView"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Rs"
+               android:textStyle="bold"
+               android:textColor="@color/black"
+               android:textSize="25sp"
+
+               />
+
+
+
+           <TextView
+               android:id="@+id/main_pricetextView"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="120"
+               android:layout_marginLeft="9dp"
+               android:textStyle="bold"
+               android:textColor="#F30F0F"
+               android:textSize="15sp"
+               android:inputType="number"
+               />
+       </LinearLayout>
+
+        <TextView
+            android:id="@+id/main_descriptiontextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="This food is very tasty"
+            android:layout_toRightOf="@id/main_imageViewid"
+            android:layout_below="@id/linearlayoutid"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:textStyle="italic"/>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

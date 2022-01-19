@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DetailsActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+
+
+        <ImageView
+            android:id="@+id/detailsimageViewid"
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            app:srcCompat="@drawable/burger_with_fries"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:id="@+id/detailsfoodnametextViewid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="food name"
+            android:textAllCaps="true"
+            android:layout_below="@id/detailsimageViewid"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:padding="15dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/detailsfoodnametextViewid"
+            android:gravity="center"
+            android:padding="3dp"
+            android:background="#F1F3EF"
+
+            >
+            <ImageView
+                android:id="@+id/minusimageViewid"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/minus_icon" />
+
+            <TextView
+                android:id="@+id/quantitytextViewid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"/>
+
+            <ImageView
+                android:id="@+id/plusimageViewid"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/plus_icon" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical"
+        android:layout_margin="15dp">
+
+
+        <TextView
+            android:id="@+id/detailsdescriptiontextViewid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="description" />
+
+        <EditText
+            android:id="@+id/nameedittextid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/et_background_file"
+            android:hint="Enter Your Name"
+            android:inputType="textPersonName"
+
+            android:padding="9dp" />
+
+        <EditText
+            android:id="@+id/phoneedittextid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/et_background_file"
+            android:hint="Enter Your Phone No"
+            android:inputType="textPersonName"
+            android:padding="9dp"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Price"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_marginTop="17dp"
+            android:textSize="16sp"
+
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center_horizontal"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Rs"
+                android:textStyle="bold"
+                android:textColor="@color/red"
+                android:textSize="18sp"
+
+                />
+
+            <TextView
+                android:id="@+id/detailspricetextviewid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="130"
+                android:textSize="18sp"
+                android:textColor="@color/red"
+                android:textStyle="bold"
+
+                />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/orderbtnid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Order now"
+            android:textSize="20sp"
+            android:background="@drawable/btn_back_file"
+            android:layout_marginTop="25dp"
+
+            />
+
+
+    </LinearLayout>
+
+</LinearLayout>
